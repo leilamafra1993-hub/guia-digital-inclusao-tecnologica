@@ -1,11 +1,222 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guia Digital</title>
+<title>Guia Digital - Inclusão Tecnológica</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    background: #123c69;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+nav {
+    background: #087e8b;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000012;
+}
+
+h2 {
+    color: #123c69;
+    margin-bottom: 15px;
+}
+
+.card {
+    background: #e8f4f8;
+    padding: 18px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+button {
+    background: #087e8b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #065d66;
+}
+
+footer {
+    background: #123c69;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+a:focus, button:focus {
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .container {
+        padding: 12px;
+    }
+}
+</style>
 </head>
+
 <body>
-<h1>Guia Digital - Inclusão Tecnológica</h1>
+
+<header>
+    <h1>Guia Digital</h1>
+    <p>Inclusão Tecnológica para Todos</p>
+</header>
+
+<nav aria-label="Menu principal">
+    <a href="#inicio">Início</a>
+    <a href="#inclusao">Inclusão Digital</a>
+    <a href="#aprenda">Aprenda</a>
+    <a href="#seguranca">Segurança</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<main class="container">
+
+<section id="inicio">
+    <h2>Bem-vindo ao Guia Digital!</h2>
+    <p>
+        Este projeto tem como objetivo promover a inclusão digital,
+        oferecendo informações e orientações para pessoas que desejam
+        aprender a utilizar as tecnologias no cotidiano.
+    </p>
+    <p>
+        Acreditamos que a tecnologia deve ser acessível a todos,
+        contribuindo para a educação, comunicação e oportunidades.
+    </p>
+</section>
+
+<section id="inclusao">
+    <h2>O que é Inclusão Digital?</h2>
+    <p>
+        Inclusão digital é garantir que todas as pessoas tenham
+        oportunidades de acesso e conhecimento para utilizar
+        computadores, celulares, internet e ferramentas digitais.
+    </p>
+
+    <div class="card">
+        <h3>Por que é importante?</h3>
+        <p>
+            Facilita o acesso à informação, à educação, aos serviços
+            públicos, ao mercado de trabalho e à comunicação.
+        </p>
+    </div>
+</section>
+
+<section id="aprenda">
+    <h2>Aprenda a utilizar a tecnologia</h2>
+
+    <div class="card">
+        <h3>1. Utilização do celular</h3>
+        <p>Aprenda a utilizar aplicativos, mensagens, chamadas e configurações.</p>
+    </div>
+
+    <div class="card">
+        <h3>2. Navegação na internet</h3>
+        <p>Aprenda a pesquisar informações e acessar sites confiáveis.</p>
+    </div>
+
+    <div class="card">
+        <h3>3. Ferramentas digitais</h3>
+        <p>Conheça ferramentas que ajudam nos estudos, no trabalho e na organização.</p>
+    </div>
+</section>
+
+<section id="seguranca">
+    <h2>Segurança na Internet</h2>
+    <p>Algumas dicas importantes para navegar com segurança:</p>
+
+    <ul>
+        <li>Não compartilhe senhas pessoais.</li>
+        <li>Evite clicar em links desconhecidos.</li>
+        <li>Utilize senhas fortes.</li>
+        <li>Não compartilhe dados bancários.</li>
+        <li>Verifique a confiabilidade dos sites.</li>
+    </ul>
+</section>
+
+<section id="contato">
+    <h2>Nosso compromisso</h2>
+    <p>
+        Promover conhecimento, acessibilidade e oportunidades
+        por meio da tecnologia, contribuindo para uma sociedade
+        mais conectada e inclusiva.
+    </p>
+
+    <button onclick="alert('Obrigado por conhecer nosso Guia Digital!')">
+        Conheça nosso projeto
+    </button>
+</section>
+
+</main>
+
+<footer>
+    <p>Projeto Guia Digital - Inclusão Tecnológica</p>
+    <p>Projeto acadêmico - Análise e Desenvolvimento de Sistemas</p>
+    <p>Gran Faculdade</p>
+</footer>
+
 </body>
 </html>
